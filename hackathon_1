@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JoelinaQ Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Frontend Web Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring web developer. I am learning how to use Python,Mysql,Html5 and Github.</p>
+  </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+        <li>Bachelor of Medicine,Bachelor of Surgery, University of Ghana,2015 to 2021</li>
+        <li>Web Development Bootcamp PLP Academy July 2025 to present</li>
+        </ul>
+
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1: Simple Landing Page</h3>
+      <p>A basic landing page using HTML demonstrate some semantics used in Html5.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2: Personal Blog Template</h3>
+      <p>A clean and modern blog homepage layout using only HTML and CSS.</p>
+    </div>
+    <!-- Add more projects as you build them -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact: 0559054558</h2>
+    <p>Email: joelinaquarshie77@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/JoelinaQuarshie" >JoelinaQuarshie</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JoelinaQ</p>
+  </footer>
+</body>
+</html>
