@@ -1,0 +1,22 @@
+CSS Rule
+
+1. Selector
+2. Declaration block {property: value;}
+Eg
+p {
+    color: blue;
+}
+
+Methods
+1. In-line CSS. Disadvantages are that they are messy and can crowd large projects
+2. Internal CSS
+3. External CSS Can be used for multiple pages
+
+Selector
+1. Element Selector
+2. ID Selector(id is a unique identifier)
+3. Class Selector (*)
+4. Universal Selector
+
+Padding is the space between css element content and border
+Margin is the space outside a border and another border of an element
