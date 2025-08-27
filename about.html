@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>About CSS</title>
+        <title>CSS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Styles/styles.css">
-        <header>
-            <h1>About Cascading Style Sheets</h1>
-            <p>
-                CSS is a style sheet language used for describing the presentation of a document written in HTML or XML.
-            </p>
-            </nav>
-        </header>
     </head>
+<body>
+    <header>
+        <h1 style="color:blue;">Cascading Style Sheets</h1><!--in-line styling-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </header>
+    <main id="main-content">
+        <section>
+            <h2>What is it about?</h2>
+            <p>CSS is a style sheet language used for describing the presentation of a document written in HTML or XML.</p>
+            <p>It allows you to control the layout, colors, fonts, and overall appearance of web pages.</p>
+            <p>CSS can be applied inline, embedded in the head of an HTML document, or linked as an external stylesheet.</p>
+        </section>
+        <section>
+         <!-- Internal CSS-->
+          <!--Use the <style> tag in the <head> of your HTML document.-->
+        
+            <!--Eg-->
+            <!-- <head>
+                <style>
+                    body {
+                    font-family: Arial, sans-serif;
+                     }
+                 </style>
+            </head> -->
+
+            <!--External CSS
+            Link an external CSS file using the <link> tag.-->
+        </section>
+    </main>
+</body>
 </html>

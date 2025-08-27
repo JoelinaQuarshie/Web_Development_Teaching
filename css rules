@@ -5,6 +5,7 @@ CSS Rule
 Eg
 p {
     color: blue;
+    text-align: center;
 }
 
 Methods
@@ -13,9 +14,31 @@ Methods
 3. External CSS Can be used for multiple pages
 
 Selector
-1. Element Selector
+1. Element Selector. Targets all instances of an element.
+eg 
+p {
+    font-size: 16px;
+}
+
 2. ID Selector(id is a unique identifier)
+Eg
+html: <div id="unique">Unique box</div>
+
+changes to
+CSS styling: 
+#unique {
+    border: 1px solid black;
+}
+
 3. Class Selector (*)
+Eg
+html: <p class="highlight">This is highlighted!</p>
+
+changes to
+CSS styling:
+.highlight {
+    background-color: yellow;
+}
 4. Universal Selector
 
 Padding is the space between css element content and border
