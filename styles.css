@@ -1,0 +1,117 @@
+div {
+    display: inline; /* Default for <div> is block*/
+}
+
+span {
+    display: inline; /* Default for <span is inline> */
+}
+
+h4, p{
+    display: inline;
+    font: 12px;
+}
+
+.first-block{
+    display: block;
+}
+
+
+/*margin and padding*/
+/* Margin is the space outside an element, padding is the space inside an element */
+/* Margin collapses between block elements, padding does not */
+/* 1 value applies to all sides, 2 values apply to vertical and horizontal, 3 values apply to top, horizontal, bottom, 4 values apply to each side individually */
+
+
+.div-inline {
+    display: inline-block; /*Specify width and height*/;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+/*float- Used to shift an element to the extreme left or right*/
+img{
+    float:right;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;/* Center items horizontally */
+    align-items: center;/* Center items vertically */
+    height: 50vh; /* Full viewport height */
+    background-color: lightblue;
+    border: 2px solid purple;
+}
+
+.flex-item {
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Two columns: first 200px, second takes 1 fraction of theremaining space */
+    grid-template-rows: 100px 1fr 100px; /* Three rows: first and last 100px, middle takes remaining space */
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    height: 100vh; /* Full viewport height */
+      grid-gap: 10px; /* Adds spacing */ 
+}
+
+header {grid-area: header;background-color: lightgray;}
+nav {grid-area: nav;background-color: lightgreen;}
+main {grid-area: main;background-color: lightblue;}
+footer {grid-area: footer;background-color: lightcoral; font-style: italic;}
+
+/*Positioning*/
+/* Absolute Positioning */
+.card{
+    display: block;
+    position: relative; /* Relative to its normal position */
+    width: 320px;
+    padding: 24px;
+    border: 1px solid black;
+    border: radius 12px;
+    background-color: aqua ;
+}
+
+.badge {
+    position: absolute; /* Positioned relative to the nearest positioned ancestor */
+    top: 8px; /*offseting cards top edge.ie 8px from the top of the parent element */
+    right: 8px; /*offseting cards top edge.ie 8px from the right of the parent element */
+    font-size: 12px;
+    color: aqua;
+    padding: 4px 8px; /* margin and padding 1 value= all round, 2 values= top and down, left and right 4 values= top, right,bottom,left*/
+    background-color: red;
+    border-radius: 999px; /* Circular badge */
+}
+
+/* Responsive Design */
+.fluid-container {
+    display: flex ;
+    width: 100%;
+    height: 50vh
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 100px;
+    background-color: mediumaquamarine;
+}
+    
+
+/* Media Queries */
+@media (max-width: 600px) /*For any device width 600 or less adjust class fluid-container properties as follows*/
+{
+    .fluid-container {
+        border: 1px solid black; /* Add border for smaller screens */
+        height: 30vh; /* Adjust height for smaller screens */
+        background-color: lightcoral; /* Change background color for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}

@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>CSS</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            h2 {
-                color: green;
-                text-decoration: underline;
-            }
-        </style>
-        <link rel="stylesheet" href="Styles/styles.css">
+        <title>CSS Layouts and Responsive Web Design</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
-<body>
-    <header>
-        <h1 style="color:blue;">Cascading Style Sheets</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-    </header>
-    <main id="main-content">
-        <section>
-            <h2>What is it about?</h2>
-            <p>CSS is a style sheet language used for describing the presentation of a document written in HTML or XML.</p>
-            <p>It allows you to control the layout, colors, fonts, and overall appearance of web pages.</p>
-            <p>CSS can be applied inline, embedded in the head of an HTML document, or linked as an external stylesheet.</p>
-        </section>
-    </main>
-</body>
+    <body>
+        <!--1. Normal document flow(block elements and inline elements)-->
+        <!-- Block elements take up the full width available -->
+        <!-- Inline elements only take up as much width as necessary -->
+         <!--Display property: block,inline, inline-block (height/width),none(hiding),flex (1D layouts),grid (2D layouts), float(shift)-->
+
+        <!--Position: static (default), relative, absolute, fixed, sticky -->
+
+        <h4 style=" background-color: blueviolet;">CSS Layouts</h4>
+        <p class="first-block">Block Layouts</p>
+        <span>Inline Layout </span>
+        <span style="background-color: brown;">This is how an inline looks</span>
+        <div class="div-inline">Inline Block</div><!--in-line block-->
+        <img src="webhelp.jpg" alt="webhelp image" style="display: block; width: 100px; height: 100px;"><!--image is usually an inline-->
+
+
+        <!--Flex box- Adjusts based on contents and dimensions
+        <div class="container">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>-->
+        <div class="flex-container">
+            <div class="flex-item">
+             <p> 
+                This is a flex line.Flexbox allows for flexible layouts that can adapt to different layouts.
+             </p>
+            </div>
+        </div>
+        <h4>Grid Layout Example</h4>
+        <div class="grid-container">
+        <header>Header</header>
+        <nav>Navigation </nav>
+        <main>Main Content</main>
+        <footer>Footer</footer>
+    </div>
+    <h4>Positioning Example</h4>
+    <div class="card">
+            <span class="badge">NEW</span>
+            <h2>Product card</h2>
+            <p>This badge is absolutely positioned inside the card.</p>
+    </div>
+    <h1> Responsive Web Design</h1>
+    <div class="fluid-container">
+        <h2>What is Responsive Web Design? 🤔</h2>
+        <p> Responsive Web Design ensures that your website adapts seamlessly to different screen sizes and orientations, providing a user-friendly experience on all devices.</p>
+    </div>
+    </body>
+    <footer>&copy 2025 Joelina Quarshie. All rights reserved</footer>
 </html>

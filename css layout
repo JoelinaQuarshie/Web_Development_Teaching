@@ -1,0 +1,80 @@
+Normal Document Flow
+By default, HTML elements follow a normal flow:
+
+Block-level elements stack vertically.
+Inline elements sit next to each other horizontally.
+
+CSS allows us to override this flow for more complex layouts.
+
+Display Property
+
+Controls how an element is displayed in the document:
+
+block: Makes the element take up the full width of its container.
+inline: Keeps the element inline with other content.
+inline-block: Acts like an inline element but allows setting width/height.
+flex / grid: Advanced layout systems (detailed below).
+
+--Model Box Styling
+div {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+--Positioning Elements
+1.Static Positioning (Default)
+
+Elements follow the normal flow.
+
+2.Relative Positioning
+
+Shifts an element relative to its original position.
+
+div {
+    position: relative;
+    top: 10px; /* Moves down */
+    left: 20px; /* Moves right */
+}
+
+3.Absolute Positioning
+
+Removes an element from normal flow and positions it relative to its nearest positioned ancestor.
+
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+4.Fixed Positioning
+
+Positions an element relative to the viewport, remaining fixed during scrolling.
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+5.Sticky Positioning
+
+Switches between relative and fixed depending on the scroll position.
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+--Flexbox
+
+The Flexbox layout system arranges items in rows or columns, making it perfect for responsive design.
+.container {
+    display: flex; --display: flex;: Activates flexbox for a container.--
+    flex-direction: row; -- flex-direction: Sets layout direction (row, column).--
+    justify-content: space-between; --justify-content: Aligns items horizontally.--
+    align-items: center; --align-items: Aligns items vertically.--
+}
